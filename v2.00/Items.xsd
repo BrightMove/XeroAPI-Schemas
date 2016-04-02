@@ -13,6 +13,7 @@
     </xs:sequence>
   </xs:complexType>
 
+  <xs:element name="Item" nillable="true" type="Item" />
   <xs:complexType name="Item">
     <xs:all>
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
@@ -21,7 +22,8 @@
       <xs:element name="ItemID" type="uniqueIdentifier" minOccurs="0" maxOccurs="1" />
       <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1" />
       <xs:element name="Code" type="xs:string" minOccurs="0" maxOccurs="1" />
-        
+      <xs:element name="Name" type="itemNameType" minOccurs="0" maxOccurs="1" />
+      
       <xs:element name="UpdatedDateUTC" minOccurs="0" maxOccurs="1" type="xs:dateTime"/>
       <xs:element name="SalesDetails" type="ItemPriceDetails" minOccurs="1" maxOccurs="1" />
       <xs:element name="PurchaseDetails" type="ItemPriceDetails" minOccurs="1" maxOccurs="1" />

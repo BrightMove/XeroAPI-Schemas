@@ -98,6 +98,14 @@
     </xs:restriction>
   </xs:simpleType>   
   
+  
+  <!-- Item Name -->
+  <xs:simpleType name="itemNameType">
+      <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+      </xs:restriction>
+  </xs:simpleType>  
+
   <!--
   Complex types
   -->
